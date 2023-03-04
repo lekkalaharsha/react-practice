@@ -1,25 +1,14 @@
-import logo from './logo.svg';
+import { useEffect } from 'react';
 import './App.css';
+
+
+import Editor from '@monaco-editor/react'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Editor height="100vh" language="python" value="console.log('Hello, World!');" />
   );
 }
+
 
 export default App;
