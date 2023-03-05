@@ -5,6 +5,7 @@ import Editor from "@monaco-editor/react";
 
 function App() {
   const editorRef = useRef(null);
+  
 
   function handleEditorDidMount(editor, monaco) {
     editorRef.current = editor; 
